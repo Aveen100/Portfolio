@@ -39,7 +39,7 @@ export default function ProjectCard(props) {
             </button>
           )}
         </div>
-        <Tilt>
+        <Tilt className="Custom">
           {props.ishideLogo == "true"? (
             <img src={props.projectImg} alt="Displaying Project" />
           ) : (

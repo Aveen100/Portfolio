@@ -41,7 +41,6 @@ function App() {
           deployedProjectLink="https://ahhis.com/"
           projectLink="https://ahhis.com/"
         />
-        {/* // id="project" */}
         <ProjectCard
           projectTitle="Whats Cooking"
           projectDesc="Developed a comprehensive restaurant management system that streamlines operations, enhances customer service, and facilitates efficient management of a restaurant business"
