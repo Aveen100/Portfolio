@@ -19,7 +19,7 @@ export default function ProjectCard(props) {
             <button className="btn" onClick={handleOnClick}>
               <span>
                 View on
-                <FiGithub
+                {/* <FiGithub
                   className="social"
                   size={20}
                   style={{
@@ -28,7 +28,7 @@ export default function ProjectCard(props) {
                     top: "2px",
                     strokeWidth: "3",
                   }}
-                />
+                /> */}
               </span>
 
               <FaArrowRight
