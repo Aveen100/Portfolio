@@ -148,8 +148,10 @@
     max-width: 300px;
   }
   .Custom {
-    width: 380px;
     display: flex;
     justify-content: center;
+  }
+  .Custom img {
+    width: 300px;
   }
 }
