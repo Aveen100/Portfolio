@@ -15,10 +15,10 @@ export default function ProjectCard(props) {
         <div className="about-project">
           <div className="project-title">{props.projectTitle}</div>
           <div className="desc">{props.projectDesc}</div>
-          <button className="btn" onClick={handleOnClick}>
-            <span>
-              View on
-              {props.ishideLogo != "true" && (
+          {props.ishideLogo != "true" && (
+            <button className="btn" onClick={handleOnClick}>
+              <span>
+                View on
                 <FiGithub
                   className="social"
                   size={20}
@@ -29,24 +29,28 @@ export default function ProjectCard(props) {
                     strokeWidth: "3",
                   }}
                 />
-              )}
-            </span>
+              </span>
 
-            <FaArrowRight
-              className="btn-arrow"
-              size={22}
-              style={{ marginLeft: "1rem" }}
-            />
-          </button>
+              <FaArrowRight
+                className="btn-arrow"
+                size={22}
+                style={{ marginLeft: "1rem" }}
+              />
+            </button>
+          )}
         </div>
-        <Tilt className="project-img" gyroscope={true}>
-          <a
-            href={props.deployedProjectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <Tilt>
+          {props.ishideLogo == "true"? (
             <img src={props.projectImg} alt="Displaying Project" />
-          </a>
+          ) : (
+            <a
+              href={props.deployedProjectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={props.projectImg} alt="Displaying Project" />
+            </a>
+          )}
         </Tilt>
       </div>
     </div>

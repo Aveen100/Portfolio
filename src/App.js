@@ -37,18 +37,16 @@ function App() {
           projectTitle="AndroHealth Solutions"
           projectDesc="Currently working on AndroHealth Solution,a health based solution built in Nuxt.Js. Responsible for implementing user interfaces and improving user experience in cutting edge health care application."
           projectImg={require("./images/AndroMockup.png")}
-          ishideLogo="true"
+          ishideLogo="false"
           deployedProjectLink="https://ahhis.com/"
           projectLink="https://ahhis.com/"
         />
+        {/* // id="project" */}
         <ProjectCard
-          id="project"
-          projectTitle="AndroHealth Solutions"
-          projectDesc="Currently working on AndroHealth Solution,a health based solution built in Nuxt.Js. Responsible for implementing user interfaces and improving user experience in cutting edge health care application."
-          projectImg={require("./images/AndroMockup.png")}
+          projectTitle="Whats Cooking"
+          projectDesc="Developed a comprehensive restaurant management system that streamlines operations, enhances customer service, and facilitates efficient management of a restaurant business"
+          projectImg={require("./images/CookingMockup.png")}
           ishideLogo="true"
-          deployedProjectLink="https://ahhis.com/"
-          projectLink="https://ahhis.com/"
         />
         {/* <ProjectCard
         projectTitle="Animated Card: featuring the latest glassmorphism trend"
