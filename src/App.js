@@ -43,8 +43,15 @@ function App() {
         />
         <ProjectCard
           projectTitle="Whats Cooking"
-          projectDesc="Developed a comprehensive restaurant management system that streamlines operations, enhances customer service, and facilitates efficient management of a restaurant business"
+          projectDesc="Developed a comprehensive restaurant management system that streamlines operations, enhances customer service, and facilitates efficient management of a restaurant business."
           projectImg={require("./images/CookingMockup.png")}
+          ishideLogo="true"
+        />
+        <ProjectCard
+          className="odd"
+          projectTitle="Pak Saf"
+          projectDesc="PakSaf is a web-based platform developed using Vue.js for the frontend and Node.js for the backend, designed to streamline waste collection and recycling processes. The platform connects users who want to dispose of recyclable waste with riders who collect it, ensuring proper waste management while incentivizing users with monetary rewards."
+          projectImg={require("./images/PakSafMockup.png")}
           ishideLogo="true"
         />
         {/* <ProjectCard

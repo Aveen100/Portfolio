@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCardStyle.css";
 import { FaArrowRight } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+// import { FiGithub } from "react-icons/fi";
 import Tilt from "react-parallax-tilt";
 
 export default function ProjectCard(props) {
@@ -15,7 +15,7 @@ export default function ProjectCard(props) {
         <div className="about-project">
           <div className="project-title">{props.projectTitle}</div>
           <div className="desc">{props.projectDesc}</div>
-          {props.ishideLogo != "true" && (
+          {props.ishideLogo !== "true" && (
             <button className="btn" onClick={handleOnClick}>
               <span>
                 View on
@@ -40,7 +40,7 @@ export default function ProjectCard(props) {
           )}
         </div>
         <Tilt className="Custom">
-          {props.ishideLogo == "true"? (
+          {props.ishideLogo === "true"? (
             <img src={props.projectImg} alt="Displaying Project" />
           ) : (
             <a
