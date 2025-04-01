@@ -1,21 +1,21 @@
 import React from 'react';
 import "./HomeBannerStyle.css";
-import cartoon from "../images/cartoon-compressed.png";
+import cartoon from "../images/main.png";
 
 export default function HomeBanner({id}) {
   return (
     <div className="home" id={id}> 
         <div className='content'>
             <div className="wrapper">
-              <div className="name">Deepa Jha</div>
+              <div className="name">Muhammad Aveen Ur Rehman</div>
               <div className="staticTitle">
-                Designer
+                Software
                 <div className='hrLine'></div>
               </div>
               <ul className="dynamicTitle">
-                <li>+<span>Developer</span></li>
+                <li><span>Engineer</span></li>
               </ul>
-              <a className='btn' href="https://www.linkedin.com/in/deepajha14/" target="_blank" rel="noopener noreferrer">Hire Me</a>
+              <a className='btn' href="https://www.linkedin.com/in/muhammad-aveen-ur-rehman-269b4b24b/" target="_blank" rel="noopener noreferrer">Hire Me</a>
             </div>
         </div>
         <div className="mask">

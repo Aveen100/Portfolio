@@ -1,6 +1,6 @@
 .contact-window {
     margin-top: 80px;
-    padding: 20px 12vw 20px 15vw;
+    padding: 20px 12vw 0px 15vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +38,8 @@
     align-items: center;
 }
 
-.contact-wrapper-right input, textarea {
+.contact-wrapper-right input,
+textarea {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 6px;
@@ -54,7 +55,8 @@
     height: 45px;
 }
 
-.contact-wrapper-right input:focus, textarea:focus {
+.contact-wrapper-right input:focus,
+textarea:focus {
     border: 1px solid #fff;
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
 }
@@ -90,7 +92,8 @@
 }
 
 
-@media screen and (max-width: 945px), (max-height: 550px) {
+@media screen and (max-width: 945px),
+(max-height: 550px) {
     .contact-window {
         padding: 100px 18vw 20px 18vw;
         margin: 0;
@@ -116,4 +119,53 @@
     .contact-wrapper-right form {
         padding-left: 0;
     }
+}
+
+.education-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #F94892;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.education-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #F94892;
+    position: relative;
+}
+
+.education-item h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #F94892;
+}
+
+.institution {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.duration {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.education-item:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #F94892;
+    left: -7.5px;
+    top: 5px;
+}
+
+.MainHeading {
+    color: #F94892 !important;
 }

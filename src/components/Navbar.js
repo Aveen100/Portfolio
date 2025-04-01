@@ -3,7 +3,7 @@ import "./NavbarStyle.css";
 import { Link } from "react-scroll";
 import {
   FaGithub,
-  FaInstagram,
+  // FaInstagram,
   FaLinkedin,
   FaBars,
   FaTimes,
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="header">
       <div className="logo">
-        <Link 
+        <Link
           activeClass="active"
           to="home"
           spy={true}
@@ -25,7 +25,7 @@ export default function Navbar() {
         >
           <div className="logo-img">
             <span className="blink">&lt;</span>
-            <span>&#47;</span>D<span className="blink">&gt;</span>
+            <span>&#47;</span>A<span className="blink">&gt;</span>
           </div>
         </Link>
       </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
       >
         <li>
           <Link
-          className="navLink"
+            className="navLink"
             activeClass="active"
             to="project"
             spy={true}
@@ -43,9 +43,40 @@ export default function Navbar() {
             duration={30}
           >Projects</Link>
         </li>
+
         <li>
           <Link
-          className="navLink"
+            className="navLink"
+            activeClass="active"
+            to="experience"
+            spy={true}
+            smooth={true}
+            duration={30}>Experience</Link>
+        </li>
+
+        <li>
+          <Link
+            className="navLink"
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            duration={30}>Skills</Link>
+        </li>
+
+        <li>
+          <Link
+            className="navLink"
+            activeClass="active"
+            to="education"
+            spy={true}
+            smooth={true}
+            duration={30}
+          >Education</Link>
+        </li>
+        <li>
+          <Link
+            className="navLink"
             activeClass="active"
             to="about"
             spy={true}
@@ -53,29 +84,10 @@ export default function Navbar() {
             duration={30}
           >About</Link>
         </li>
-        <li>
-          <Link
-          className="navLink" 
-            activeClass="active"
-            to="skills"
-            spy={true}
-            smooth={true}
-            duration={30}>Skills</Link>
-        </li>
-        <li>
-          <Link
-          className="navLink"
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={30}
-          >Contact</Link>
-        </li>
       </ul>
       <div className={click ? "social-links active" : "social-links"}>
         <a
-          href="https://www.linkedin.com/in/deepajha14/"
+          href="https://www.linkedin.com/in/muhammad-aveen-ur-rehman-269b4b24b/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -86,7 +98,7 @@ export default function Navbar() {
           />
         </a>
         <a
-          href="https://github.com/Deepajha14"
+          href="https://github.com/Aveen100"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -96,7 +108,7 @@ export default function Navbar() {
             style={{ marginRight: "2rem" }}
           />
         </a>
-        <a
+        {/* <a
           href="https://www.instagram.com/artsydeepa/"
           target="_blank"
           rel="noopener noreferrer"
@@ -106,7 +118,7 @@ export default function Navbar() {
             size={25}
             style={{ marginRight: "2rem" }}
           />
-        </a>
+        </a> */}
       </div>
       <div className="hamburger" onClick={handleCLick}>
         {click ? (

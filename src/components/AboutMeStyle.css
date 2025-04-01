@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    margin: 80px 13vw 0 18vw;
+    margin: 80px 20vw 20vh 18vw;
     padding-top: 60px;
 }
 
@@ -82,7 +82,7 @@
         font-size: 80px;
         width: 80px;
         line-height: 70px;
-        right: 8vw;
+        right: 1vw;
     }
 }
 
@@ -113,4 +113,11 @@
         margin-top: 0;
         padding-top: 70px;
     }
+}
+
+.Main{
+    font-size: 50px;
+    font-weight: 600;
+    color: #F94892;
+    text-align: center;
 }

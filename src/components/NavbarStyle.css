@@ -49,9 +49,9 @@
 .header .nav-menu{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 
 .nav-menu li{
@@ -61,7 +61,7 @@
 }
 
 .nav-menu li .navLink{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
