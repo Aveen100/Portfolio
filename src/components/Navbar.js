@@ -97,7 +97,7 @@ export default function Navbar() {
             style={{ marginRight: "2rem" }}
           />
         </a>
-        <a
+        {/* <a
           href="https://github.com/Aveen100"
           target="_blank"
           rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function Navbar() {
             size={25}
             style={{ marginRight: "2rem" }}
           />
-        </a>
+        </a> */}
         {/* <a
           href="https://www.instagram.com/artsydeepa/"
           target="_blank"
